@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Company Dashboard</h1>
+    </header>
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#" onclick="showContent('home')">Home</a></li>
+        <li><a href="#" onclick="showContent('about')">About Us</a></li>
+        <li><a href="#" onclick="showContent('services')">Services</a></li>
+        <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div id="home" class="content-section">Welcome to our Company Dashboard!</div>
+      <div id="about" class="content-section">About Us: We provide excellent services...</div>
+      <div id="services" class="content-section">Our Services: Web Development, Design, etc.</div>
+      <div id="contact" class="content-section">Contact Us: info@company.com</div>
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
