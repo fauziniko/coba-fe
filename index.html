@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Company Dashboard</h1>
+    </header>
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#" onclick="showContent('home')">Home</a></li>
+        <li><a href="#" onclick="showContent('about')">About Us</a></li>
+        <li><a href="#" onclick="showContent('services')">Services</a></li>
+        <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div id="home" class="content-section">
+        <div class="landing-page">
+          <img src="images/home.jpg" alt="Home Image" style="width:100%; height:auto;">
+          <div class="welcome-text">
+            <h2>Welcome to Our Portfolio</h2>
+            <p>We are passionate about delivering exceptional services that drive success. Explore our latest projects and see how we bring ideas to life.</p>
+          </div>
+          <div class="portfolio-gallery">
+            <div class="portfolio-item">
+              <img src="images/project1.jpg" alt="Project 1" style="width:100%; height:auto;">
+              <h3>Project 1</h3>
+              <p>A cutting-edge e-commerce platform designed for seamless shopping experiences.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/project2.jpg" alt="Project 2" style="width:100%; height:auto;">
+              <h3>Project 2</h3>
+              <p>An intuitive mobile app that redefines user engagement and accessibility.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/project3.jpg" alt="Project 3" style="width:100%; height:auto;">
+              <h3>Project 3</h3>
+              <p>A robust IT solution tailored for efficient business operations and growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="content-section" style="display:none;">
+        <img src="images/about.jpg" alt="About Us Image" style="width:100%; height:auto;">
+        <p>About Us: Our company is dedicated to providing excellent services and building long-term relationships with our clients. We believe in innovation and excellence.</p>
+      </div>
+      <div id="services" class="content-section" style="display:none;">
+        <img src="images/services.jpg" alt="Services Image" style="width:100%; height:auto;">
+        <p>Our Services: We specialize in web development, UI/UX design, digital marketing, and IT consultancy. Let us help you achieve your goals with our expert team.</p>
+      </div>
+      <div id="contact" class="content-section" style="display:none;">
+        <img src="images/contact.jpg" alt="Contact Us Image" style="width:100%; height:auto;">
+        <p>Contact Us: Feel free to reach out at <a href="mailto:info@company.com">info@company.com</a> or call us at (123) 456-7890. We look forward to hearing from you!</p>
+      </div>
+    </main>
+  </div>
+  <script>
+    function showContent(sectionId) {
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
